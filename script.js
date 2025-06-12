@@ -15,4 +15,7 @@ document.body.appendChild(button);
 const paragraph = document.createElement("p");
 paragraph.textContent = "This is a paragraph.";
 document.body.appendChild(paragraph);
-    
+
+// add a array of numbers and log it to the console
+const numbers = [1, 2, 3, 4, 5];
+console.log("Array of numbers:", numbers);
