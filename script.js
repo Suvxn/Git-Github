@@ -70,4 +70,18 @@ function toggleParagraphVisibility() {
 // add a button to toggle the paragraph visibility
 const toggleButton = document.createElement("button");
 toggleButton.textContent = "Toggle Paragraph Visibility";
-toggleButton.addEventListener("click", toggleParagraphVisibility);
+toggleButton.adEventListener("click", toggleParagraphVisibility);  
+
+document.body.appendChild(toggleButton);
+// add a function to log the current date and time
+
+function logCurrentDateTime() {
+    const now = new Date();
+    console.log("Current Date and Time:", now.toLocaleString());
+}
+// add a button to log the current date and time
+const dateTimeButton = document.createElement("button");
+dateTimeButton.textContent = "Log Current Date and Time";
+dateTimeButton.addEventListener("click", logCurrentDateTime);
+document.body.appendChild(dateTimeButton);
+
