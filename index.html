@@ -123,7 +123,37 @@
 <div class="loader-animation-wrapper-circle">
     <div class="loader-circle"></div>
     <div class="loader-text">Loading...</div>   
+</div>
+<p> today baymax done </p>
+
+<body>
+    <!-- Assuming you have a div with this ID where the widget will be embedded -->
+    <div id="chat-widget-container"></div>
+
+    <script type="text/javascript">
+      (function(d, t) {
+          var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+          v.onload = function() {
+            window.voiceflow.chat.load({
+              verify: { projectID: '67e71fd6a64cae9480b9b274' },
+              url: 'https://general-runtime.voiceflow.com',
+              versionID: 'production',
+              voice: {
+                url: "https://runtime-api.voiceflow.com"
+              },
+              render: {
+                mode: 'embedded',
+                target: document.getElementById('chat-widget-container') // Fixed the target element ID
+              }
+            });
+          }
+          v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; 
+          v.type = "text/javascript"; 
+          s.parentNode.insertBefore(v, s);
+      })(document, 'script');
+    </script>
 
 <script src="script.js"></script>
+
 </body>
 </html>
